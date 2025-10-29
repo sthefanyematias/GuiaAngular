@@ -1745,13 +1745,6 @@ export class ListarComponent { // Verifique se a classe é 'Listar' ou 'ListarCo
 }
 ```
 
-### 🎥 Tutorial em Vídeo 
-
-Para visualizar como resolver essa questão do nome do arquivo (apagando o sufixo), assista ao vídeo a seguir:
-
-> **Nota:** Este vídeo demonstra o ajuste rápido dos caminhos dos arquivos `templateUrl` e `styleUrl` **e a atualização do nome da classe** do componente após a criação.
-
-<img src="assets/video.gif" alt="Demonstração do ajuste do sufixo .component nos arquivos de componente" width="500">
 
 
 

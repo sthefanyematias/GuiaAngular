@@ -505,6 +505,7 @@ Digite o seguinte código:
         <h1 class="titulo">Gerenciamento de Medicamentos</h1>
         <nav class="menu">
             <ul>
+                <li><a routerLink="/principal" routerLinkActive="active">Home</a></li>
               <li><a routerLink="/cadastrar" routerLinkActive="active">Cadastrar</a></li>
               <li><a routerLink="/consultar" routerLinkActive="active">Consultar</a></li>
               <li><a routerLink="/excluir" routerLinkActive="active">Excluir</a></li>

@@ -1,0 +1,78 @@
+.consulta-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #444;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.input-id {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+  
+.btn-buscar {
+    padding: 12px;
+    background-color: #6c757d; 
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+  
+.btn-buscar:hover {
+    background-color: #5a6268;
+}
+
+.btn-buscar i {
+    margin-right: 8px;
+}
+  
+.medicamento-dados {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e9f5ff; 
+    border: 1px solid #b3d4fc;
+    border-radius: 6px;
+}
+
+.medicamento-dados h3 {
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+  
+.erro-busca {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da; 
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.erro-busca i {
+    margin-right: 5px;
+}

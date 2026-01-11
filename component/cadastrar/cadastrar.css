@@ -1,0 +1,108 @@
+.content-form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #444;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.input-simples {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.input-simples:focus {
+  border-color: #6c757d; 
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+  outline: none;
+}
+
+.input-submeter {
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  background-color: #28a745; 
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.input-submeter:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.medicamento-dados {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sucesso-cadastro {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724; 
+}
+
+.medicamento-dados h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #155724;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.medicamento-dados p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.medicamento-dados strong {
+    color: #000;
+}

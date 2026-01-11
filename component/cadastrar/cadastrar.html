@@ -1,0 +1,93 @@
+<div class="content-form-container">
+    <h2>{{ titulo }}</h2>
+    <form (ngSubmit)="submeter()">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="input-id">Id</label>
+          <input
+            class="input-simples"
+            id="input-id"
+            name="input-id"
+            placeholder="Ex: 001"
+            type="text"
+            [(ngModel)]="medicamento.id"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="input-nome">Nome</label>
+          <input
+            class="input-simples"
+            id="input-nome"
+            name="input-nome"
+            placeholder="Ex: Paracetamol 500mg"
+            type="text"
+            [(ngModel)]="medicamento.nome"
+            required
+          />
+        </div>
+      </div>
+      
+      <label for="input-fabricante">Fabricante</label>
+      <input
+        class="input-simples"
+        id="input-fabricante"
+        name="input-fabricante"
+        placeholder="Ex: Medley"
+        type="text"
+        [(ngModel)]="medicamento.fabricante"
+        required
+      />
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="input-fabricacao">Data de Fabricação</label>
+          <input
+            class="input-simples"
+            id="input-fabricacao"
+            name="input-fabricacao"
+            type="date"
+            [(ngModel)]="medicamento.data_fabricacao"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="input-validade">Data de Validade</label>
+          <input
+            class="input-simples"
+            id="input-validade"
+            name="input-validade"
+            type="date"
+            [(ngModel)]="medicamento.data_validade"
+            required
+          />
+        </div>
+      </div>
+
+      <label for="input-preco">Preço (R$)</label>
+      <input
+        class="input-simples"
+        id="input-preco"
+        name="input-preco"
+        placeholder="0.00"
+        type="number"
+        step="0.01"
+        [(ngModel)]="medicamento.preco"
+        required
+      />
+
+      <button type="submit" class="input-submeter">
+        <i class="fas fa-save"></i> Cadastrar Medicamento
+      </button>
+    </form>
+
+    <div *ngIf="medicamentoCadastrado" class="medicamento-dados sucesso-cadastro">
+    <h3>Medicamento cadastrado com sucesso!</h3>
+    <p><strong>Id:</strong> {{ medicamentoCadastrado.id }}</p>
+    <p><strong>Nome:</strong> {{ medicamentoCadastrado.nome }}</p>
+    <p><strong>Fabricante:</strong> {{ medicamentoCadastrado.fabricante }}</p>
+    <p><strong>Data de Fabricação:</strong> {{ medicamentoCadastrado.data_fabricacao | date:'dd/MM/yyyy' }}</p>
+    <p><strong>Validade:</strong> {{ medicamentoCadastrado.data_validade | date:'dd/MM/yyyy' }}</p>
+    <p><strong>Preço:</strong> {{ medicamentoCadastrado.preco | currency:'BRL':'symbol':'1.2-2' }}</p>
+</div>
+</div>

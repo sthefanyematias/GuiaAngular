@@ -1,0 +1,41 @@
+<div class="content-container">
+    <h2>Lista de Medicamentos Cadastrados</h2>
+    
+    <div class="table-wrapper">
+        <table class="estoque-table">
+            <thead>
+                <tr>
+                    <th>Id.</th>
+                    <th>Nome</th>
+                    <th>Fabricante</th>
+                    <th>Data de Fabricação</th>
+                    <th>Validade</th>
+                    <th>Preço (R$)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (medicamento of listaMedicamentos; track medicamento.id){
+                <tr>
+                    <td>{{ medicamento.id }}</td>
+                    <td>{{ medicamento.nome }}</td>
+                    <td>{{ medicamento.fabricante }}</td>
+                    <td>{{ medicamento.data_fabricacao | date:'dd/MM/yyyy' }}</td>
+                    <td>{{ medicamento.data_validade | date:'dd/MM/yyyy' }}</td>
+                    <td>{{ medicamento.preco | currency:'BRL':'symbol':'1.2-2' }}</td>
+                    
+                    <td class="acao-buttons">
+                        <button class="btn-excluir" (click)="excluir(medicamento.id)">
+                            <i class="fas fa-trash-alt"></i> Excluir
+                        </button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="listaMedicamentos.length === 0" class="mensagem-vazio">
+        Nenhum medicamento cadastrado.
+    </div>
+</div>

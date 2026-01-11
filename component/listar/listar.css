@@ -1,0 +1,97 @@
+.content-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #333333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; 
+}
+
+.estoque-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px; 
+}
+
+.estoque-table thead tr {
+    background-color: #6c757d;
+    color: white;
+    font-weight: 600;
+}
+
+.estoque-table th, .estoque-table td {
+    padding: 12px 18px;
+    text-align: center; 
+    border: 1px solid #e0e0e0;
+}
+
+.estoque-table tbody tr {
+    background-color: #ffffff;
+}
+
+.estoque-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.estoque-table tbody tr:hover {
+    background-color: #f1f1f1; 
+}
+
+.acao-buttons {
+    white-space: nowrap; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.btn-excluir {
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    background-color: #dc3545; 
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.btn-excluir i {
+    margin-right: 5px;
+}
+
+.btn-excluir:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+.mensagem-vazio {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px dashed #cccccc;
+    color: #666;
+    text-align: center;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .estoque-table {
+        min-width: 650px; 
+    }
+}

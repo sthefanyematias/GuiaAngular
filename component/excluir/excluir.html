@@ -1,0 +1,31 @@
+<div class="excluir-container">
+    <h2>Exclusão de Medicamento</h2>
+    
+    <div class="alerta-perigo">
+        <i class="fas fa-exclamation-triangle"></i>
+        ATENÇÃO: A exclusão é irreversível.
+    </div>
+
+    <form (ngSubmit)="excluirMedicamento()">
+      <label for="input-id">Informe o código de identificação para exclusão:</label>
+      <input
+        type="text"
+        id="input-id"
+        name="input-id"
+        [(ngModel)]="idExcluir"
+        class="input-id"
+        required
+      />
+      <button type="submit" class="btn-excluir">
+        <i class="fas fa-trash-alt"></i> Excluir Permanentemente
+      </button>
+    </form>
+  
+    <div *ngIf="mensagemSucesso" class="sucesso-mensagem">
+      <i class="fas fa-check-circle"></i> {{ mensagemSucesso }}
+    </div>
+  
+    <div *ngIf="erroMensagem" class="erro-mensagem">
+      <i class="fas fa-times-circle"></i> {{ erroMensagem }}
+    </div>
+</div>

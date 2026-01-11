@@ -1,0 +1,31 @@
+<div class="consulta-container">
+    <h2>Consulta de Medicamento por Id</h2>
+    <form (ngSubmit)="buscarMedicamento()">
+      <label for="input-id">Informe o código de identificação do medicamento:</label>
+      <input
+        type="text"
+        id="input-id"
+        name="input-id"
+        [(ngModel)]="idBusca"
+        class="input-id"
+        required
+      />
+      <button type="submit" class="btn-buscar">
+        <i class="fas fa-search"></i> Buscar
+    </button>
+    </form>
+  
+    <div *ngIf="medicamentoEncontrado" class="medicamento-dados">
+      <h3>Dados do Medicamento</h3>
+      <p><strong>Id:</strong> {{ medicamentoEncontrado.id }}</p>
+      <p><strong>Nome:</strong> {{ medicamentoEncontrado.nome }}</p>
+      <p><strong>Fabricante:</strong> {{ medicamentoEncontrado.fabricante }}</p>
+      <p><strong>Data de Fabricação:</strong> {{ medicamentoEncontrado.data_fabricacao | date:'dd/MM/yyyy' }}</p>
+      <p><strong>Validade:</strong> {{ medicamentoEncontrado.data_validade | date:'dd/MM/yyyy' }}</p>
+      <p><strong>Preço:</strong> {{ medicamentoEncontrado.preco | currency:'BRL':'symbol':'1.2-2' }}</p>
+    </div>
+  
+    <div *ngIf="erroBusca" class="erro-busca">
+      <i class="fas fa-times-circle"></i> {{ erroBusca }}
+    </div>
+</div>

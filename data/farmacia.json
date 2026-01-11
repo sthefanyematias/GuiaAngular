@@ -1,0 +1,108 @@
+{
+  "medicamentos": [
+    {
+      "id": "12045",
+      "nome": "Cloridrato de Sertralina 50mg",
+      "fabricante": "EMS",
+      "data_fabricacao": "2024-01-20",
+      "data_validade": "2026-07-20",
+      "preco": 45.99
+    },
+    {
+      "id": "78103",
+      "nome": "AAS Infantil",
+      "fabricante": "Bayer",
+      "data_fabricacao": "2025-03-01",
+      "data_validade": "2027-03-01",
+      "preco": 5.75
+    },
+    {
+      "id": "55290",
+      "nome": "Lactulose 667mg/ml",
+      "fabricante": "Medley",
+      "data_fabricacao": "2024-04-15",
+      "data_validade": "2026-04-15",
+      "preco": 32.8
+    },
+    {
+      "id": "81077",
+      "nome": "Amoxicilina + Clavulanato",
+      "fabricante": "Eurofarma",
+      "data_fabricacao": "2024-07-28",
+      "data_validade": "2025-11-28",
+      "preco": 78.1
+    },
+    {
+      "id": "34921",
+      "nome": "Omeprazol 20mg",
+      "fabricante": "Prati Donaduzzi",
+      "data_fabricacao": "2023-11-05",
+      "data_validade": "2025-05-05",
+      "preco": 10.5
+    },
+    {
+      "id": "62589",
+      "nome": "Dipirona Monoidratada 500mg",
+      "fabricante": "Cimed",
+      "data_fabricacao": "2024-02-14",
+      "data_validade": "2026-02-14",
+      "preco": 12
+    },
+    {
+      "id": "41108",
+      "nome": "Probiótico Flora Intestinal",
+      "fabricante": "Sanofi",
+      "data_fabricacao": "2025-04-01",
+      "data_validade": "2027-04-01",
+      "preco": 59.9
+    },
+    {
+      "id": "27643",
+      "nome": "Cetirizina 10mg",
+      "fabricante": "Genérico",
+      "data_fabricacao": "2024-03-05",
+      "data_validade": "2026-03-05",
+      "preco": 22.45
+    },
+    {
+      "id": "99015",
+      "nome": "Neosaldina",
+      "fabricante": "Takeda",
+      "data_fabricacao": "2024-11-20",
+      "data_validade": "2026-11-20",
+      "preco": 19.99
+    },
+    {
+      "id": "14698",
+      "nome": "Cloridrato de Metformina 500mg",
+      "fabricante": "Aché",
+      "data_fabricacao": "2024-06-01",
+      "data_validade": "2026-09-01",
+      "preco": 8.15
+    },
+    {
+      "id": "88301",
+      "nome": "Solução Fisiológica 0,9%",
+      "fabricante": "Farmace",
+      "data_fabricacao": "2025-01-20",
+      "data_validade": "2028-01-20",
+      "preco": 6.9
+    },
+    {
+      "id": "50674",
+      "nome": "Diclofenaco Sódico Gel",
+      "fabricante": "Catarinense",
+      "data_fabricacao": "2024-05-18",
+      "data_validade": "2026-05-18",
+      "preco": 25.7
+    },
+    {
+      "id": "39512",
+      "nome": "Dramin B6",
+      "fabricante": "Takeda",
+      "data_fabricacao": "2024-12-05",
+      "data_validade": "2026-12-05",
+      "preco": 14.5
+    }
+  ]
+}

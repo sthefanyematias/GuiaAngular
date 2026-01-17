@@ -1,5 +1,5 @@
 
-# 🚀 Guia de Configuração: Site Simples de Gerenciamento de Farmácia com Angular, TypeScript e Node.js
+# Guia de Configuração: Site Simples de Gerenciamento de Farmácia com Angular, TypeScript e Node.js
 
 Este README detalha os passos para configurar o ambiente de desenvolvimento e iniciar um projeto simples que demonstra a integração entre Node.js, Angular, TypeScript e JSON-Server (simulação de API). O desenvolvimento será realizado utilizando a IDE **Visual Studio Code (VS Code)**.
 
@@ -7,7 +7,7 @@ Este README detalha os passos para configurar o ambiente de desenvolvimento e in
 
 ---
 
-# 🛠️ Recursos Necessários (Instalação)
+# Recursos Necessários (Instalação)
 
 Seu projeto Angular precisa de algumas ferramentas baseadas em Node.js para funcionar corretamente.
 
@@ -21,7 +21,7 @@ Seu projeto Angular precisa de algumas ferramentas baseadas em Node.js para func
 
 ---
 
-# 🚀 Criação da Aplicação Angular
+# Criação da Aplicação Angular
 
 Com o ambiente configurado, siga os passos para criar sua primeira aplicação.
 
@@ -190,7 +190,7 @@ Com todas as pastas e seus respectivos arquivos criados, digite o comando para s
 code .
 ```
 ---
-# ⚛️ No VS Code
+# No VS Code
 
 #### 1. `app.component.ts` ou `app.ts`
 
@@ -1681,7 +1681,7 @@ export class ListarComponent implements OnInit {
 ```
 
 ---
-# 🔥 Teste
+# Teste
 
 Para testar o backend (API simulada), siga estes passos:
 
@@ -1716,7 +1716,7 @@ Para testar o backend (API simulada), siga estes passos:
     ```
 ---
 
-### ⚠️ ALERTA IMPORTANTE: ATENÇÃO AOS ARQUIVOS .TS 
+### ALERTA: ATENÇÃO AOS ARQUIVOS .TS 
 
 > **Ao criar componentes em pastas separadas (`pages`, `component`, `core`), dois erros são comuns:**
 >
@@ -1725,7 +1725,7 @@ Para testar o backend (API simulada), siga estes passos:
 > 2.  **Capitalização (Case Sensitive):** O nome do componente deve ser consistente. Se a classe é `CabecalhoComponent`, use `CabecalhoComponent` nos *imports* (`app.component.ts`, `app.routes.ts`) para evitar erros de compilação.
 
 ---
-### 🎞️ Dica Rápida: Ajuste de Nomes nos Componentes
+### Dica Rápida: Ajuste de Nomes nos Componentes
 
 Durante a criação de componentes, especialmente se for usada a opção `--standalone`, o Angular pode gerar arquivos com ou sem o sufixo `.component` no nome (Ex.: `listar.html` ou `listar.component.html`).
 

@@ -1,25 +1,23 @@
 
-# Guia de Configuração: Site Simples de Gerenciamento de Farmácia com Angular, TypeScript e Node.js
+# Guia Prático: Sistema de Gerenciamento de Farmácia | Angular & Node.js
 
-Este README detalha os passos para configurar o ambiente de desenvolvimento e iniciar um projeto simples que demonstra a integração entre Node.js, Angular, TypeScript e JSON-Server (simulação de API). O desenvolvimento será realizado utilizando a IDE **Visual Studio Code (VS Code)**.
+Este documento detalha os passos para configurar o ambiente de desenvolvimento e iniciar um projeto simples que demonstra a integração entre Node.js, Angular, TypeScript e JSON Server (simulação de API). O desenvolvimento será realizado utilizando a IDE **Visual Studio Code (VS Code)**.
 
-**Objetivo do Guia:** Criar um site simples de **gerenciamento para uma Farmácia**, utilizando Angular e alguns conceitos básicos, como o consumo de dados de uma API simulada, demonstrando a importância de cada recurso na pilha de desenvolvimento.
+**Objetivo do Guia:** criar um site simples de gerenciamento para uma farmácia, utilizando Angular e alguns conceitos básicos, como o consumo de dados de uma API simulada, demonstrando a importância de cada recurso na pilha de desenvolvimento.
 
----
-
-# Recursos Necessários (Instalação)
+# Recursos Necessários (Instalação) 
 
 Seu projeto Angular precisa de algumas ferramentas baseadas em Node.js para funcionar corretamente.
 
-## 1. Node.js e NPM (Node Package Manager)
+### 1. Node.js e NPM (Node Package Manager)
 
-## 2. Angular CLI (Command Line Interface)
+### 2. Angular CLI (Command Line Interface)
 
-## 3. TypeScript
+### 3. TypeScript
 
-## 4. JSON-Server (Simulação de API)
+### 4. JSON-Server (Simulação de API)
 
----
+<br>
 
 # Criação da Aplicação Angular
 
@@ -189,7 +187,9 @@ Com todas as pastas e seus respectivos arquivos criados, digite o comando para s
 ```bash
 code .
 ```
----
+
+<br>
+
 # No VS Code
 
 #### 1. `app.component.ts` ou `app.ts`
@@ -619,7 +619,7 @@ Digite o seguinte código:
   <div class="container">
     
     <div class="boas-vindas-simples">
-      <h2>💊 Bem-vindo(a) à Gestão de Medicamentos!</h2>
+      <h2>Bem-vindo(a) à Gestão de Medicamentos!</h2>
       <p>Gerencie o estoque da sua farmácia com rapidez, organização e praticidade.</p>
     </div>
     
@@ -1680,7 +1680,8 @@ export class ListarComponent implements OnInit {
 }
 ```
 
----
+<br>
+
 # Teste
 
 Para testar o backend (API simulada), siga estes passos:
@@ -1714,7 +1715,8 @@ Para testar o backend (API simulada), siga estes passos:
     ```bash
     npx ng serve --open
     ```
----
+
+<br>
 
 ### ALERTA: ATENÇÃO AOS ARQUIVOS .TS 
 
@@ -1724,7 +1726,8 @@ Para testar o backend (API simulada), siga estes passos:
 >
 > 2.  **Capitalização (Case Sensitive):** O nome do componente deve ser consistente. Se a classe é `CabecalhoComponent`, use `CabecalhoComponent` nos *imports* (`app.component.ts`, `app.routes.ts`) para evitar erros de compilação.
 
----
+<br>
+
 ### Dica Rápida: Ajuste de Nomes nos Componentes
 
 Durante a criação de componentes, especialmente se for usada a opção `--standalone`, o Angular pode gerar arquivos com ou sem o sufixo `.component` no nome (Ex.: `listar.html` ou `listar.component.html`).

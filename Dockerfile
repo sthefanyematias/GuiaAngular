@@ -35,8 +35,8 @@ COPY data/farmacia.json /data/farmacia.json
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY docker-entrypoint.sh /docker-entrypoint.sh
-RUN sed -i 's/\r//' /docker-entrypoint.sh && chmod +x /docker-entrypoint.sh
+RUN printf '#!/bin/sh\njson-server --watch /data/farmacia.json --port 3000 --host 127.0.0.1 &\nnginx -g "daemon off;"\n' > /docker-entrypoint.sh \
+  && chmod +x /docker-entrypoint.sh
 
 EXPOSE 80
 

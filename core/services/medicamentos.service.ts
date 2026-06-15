@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { Medicamento } from '../types/types';
 import { HttpClient } from '@angular/common/http';
@@ -7,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MedicamentosService {
-  private readonly API = 'http://localhost:3000/medicamentos';
+  private readonly API = '/medicamentos';
 
   constructor(private http: HttpClient) { }
 
@@ -28,7 +29,6 @@ export class MedicamentosService {
   }
 
   editar(medicamento: Medicamento): Observable<Medicamento> {
-    const url = `${this.API}/${medicamento.id}`
-    return this.http.put<Medicamento>(url, medicamento)
+    return this.http.put<Medicamento>(`${this.API}/${medicamento.id}`, medicamento);
   }
 }
